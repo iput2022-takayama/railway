@@ -56,7 +56,6 @@ class RailwayNetwork:
             self._dfs(start, visited, current_path, 0)
 
     def _dfs(self, current, visited, current_path, total_distance):
-        """深さ優先探索で経路を探索"""
         # より長い経路が見つかった場合、更新
         if total_distance > self.max_distance:
             self.max_distance = total_distance
